@@ -21,5 +21,3 @@ jobs:
     - name: Send files to EC2
       run: |
         scp -r -o StrictHostKeyChecking=no ./* ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/home/ubuntu/pipeline_test
-
-
